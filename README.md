@@ -16,6 +16,10 @@ When you clone a VM, the copy is born with:
 If we don't fix this in every VM, you're going to have nodes that maybe one day don't even have an IP, and fixing it is a mess. We're going to fix this in Step 2, before you install anything kubernetes related, and before we even SSH into it. These couple of minutes can save you hours of troubleshooting later (based on my sad experience)
 Just wanted to add that I started with 2GB of memory and then added more memory to the control plane (server). This is why in the images you can see that the two workers have less memory than the control plane, other that that, they're clones of each other.
 
+![instana-lab-server](https://github.com/karenmontesca/k3-lab-setup/blob/main/img/labgitserver-clone.png)
+
+![instana-lab-worker#](https://github.com/karenmontesca/k3-lab-setup/blob/main/img/labgitworker-clone.png)
+
 ---
 
 ## Step 1 — Clone the VM base
